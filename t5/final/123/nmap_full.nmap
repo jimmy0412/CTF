@@ -1,0 +1,87 @@
+# Nmap 7.80 scan initiated Thu Feb  9 09:55:57 2023 as: nmap -v -sV -sT -p- -oA nmap_full nmap 192.168.1.155
+Failed to resolve "nmap".
+Nmap scan report for 192.168.1.155
+Host is up (0.0082s latency).
+Not shown: 65529 closed ports
+PORT      STATE SERVICE       VERSION
+23/tcp    open  telnet        BusyBox telnetd
+80/tcp    open  http          uc-httpd 1.0.0
+554/tcp   open  rtsp          H264DVR rtspd 1.0
+9527/tcp  open  unknown
+9530/tcp  open  unknown
+34567/tcp open  dhanalakshmi?
+2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port80-TCP:V=7.80%I=7%D=2/9%Time=63E452B9%P=x86_64-pc-linux-gnu%r(GetRe
+SF:quest,66C1,"HTTP/1\.0\x20200\x20OK\nContent-type:\x20text/html\nServer:
+SF:\x20uc-httpd\x201\.0\.0\nExpires:\x200\n\n\xef\xbb\xbf<!DOCTYPE\x20html
+SF:\x20PUBLIC\x20\"-//W3C//DTD\x20XHTML\x201\.0\x20Transitional//EN\"\x20\
+SF:"http://www\.w3\.org/TR/xhtml1/DTD/xhtml1-transitional\.dtd\">\r\n<html
+SF:\x20xmlns=\"http://www\.w3\.org/1999/xhtml\">\r\n<head>\r\n\x20\x20\x20
+SF:\x20<meta\x20http-equiv=\"Content-Type\"\x20content=\"text/html;\x20cha
+SF:rset=UTF-8\"\x20/>\r\n\x20\x20\x20\x20<link\x20rel=\"stylesheet\"\x20ty
+SF:pe=\"text/css\"\x20media=\"screen\"\x20href=\"m\.css\"\x20/>\r\n\x20\x2
+SF:0\x20\x20\r\n\x20\x20\x20\x20<title>NETSurveillance\x20WEB</title>\r\n\
+SF:x20\x20\x20\x20\r\n\x20\x20\x20\x20<!--\x20m\.js\x20-->\r\n\r\n\x20\x20
+SF:\x20\x20<script\x20type=\"text/javascript\"\x20language=\"JavaScript\">
+SF:\r\n\tif\(navigator\.userAgent\.indexOf\('IE'\)\x20<\x200\)\r\n\t{\r\n\
+SF:t\tvar\x20userAgent\x20=\x20navigator\.userAgent,\x20\x20\x20\r\n\x20\x
+SF:20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20rMsie\x20=\x2
+SF:0/\(msie\\s\|trident\.\*rv:\)\(\[\\w\.\]\+\)/,\x20\x20\x20\r\n\x20\x20\
+SF:x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20rFirefox\x20=\x2
+SF:0/\(firefox\)\\/\(\[\\w\.\]\+\)/,\x20\x20\x20\r\n\x20\x20\x20\x20\x20\x
+SF:20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20rOpera\x20=\x20/\(opera\)\.\+
+SF:version\\/\(\[\\w\.\]\+\)/,\x20\x20\x20\r\n\x20\x20\x20\x20\x20\x20\x20
+SF:\x20\x20\x20\x20\x20\x20\x20\x20\x20rChrome\x20=\x20/\(chrome\)\\/\(\[\
+SF:\w\.\]\+\)/,\x20\x20\x20\r\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2
+SF:0\x20\x20\x20\x20\x20rSafari\x20=\x20/version\\/\(\[\\w\.\]\+\)\.\*\(")
+SF:%r(FourOhFourRequest,CC,"HTTP/1\.0\x20200\x20OK\nContent-type:\x20appli
+SF:cation/binary\nServer:\x20uc-httpd\x201\.0\.0\nExpires:\x200\n\n<html><
+SF:head><title>404\x20File\x20Not\x20Found</title></head>\n<body>The\x20re
+SF:quested\x20URL\x20was\x20not\x20found\x20on\x20this\x20server</body></h
+SF:tml>\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port9527-TCP:V=7.80%I=7%D=2/9%Time=63E452B9%P=x86_64-pc-linux-gnu%r(NUL
+SF:L,1027,"RTP:\x20onClientConnect\x20enginedId\x200\x20,\x20clientId\x200
+SF:\x20,\x20ip:port\x20192\.168\.1\.245:52285\x20\nHTTPD:\x20fd:\x20138,\x
+SF:20IP:\x200xf501a8c0\nHTTPD:\x20invalid\x20request\nHTTPD:\x20fd:\x20138
+SF:,\x20IP:\x200xf501a8c0\nHTTPD:\x20Catch\x20a\x20broken\x20socket\nHTTPD
+SF::\x20Catch\x20a\x20broken\x20socket\nHTTPD:\x20Catch\x20a\x20broken\x20
+SF:socket\nHTTPD:\x20Catch\x20a\x20broken\x20socket\nHTTPD:\x20Catch\x20a\
+SF:x20broken\x20socket\nHTTPD:\x20Catch\x20a\x20broken\x20socket\nHTTPD:\x
+SF:20Catch\x20a\x20broken\x20socket\nHTTPD:\x20Catch\x20a\x20broken\x20soc
+SF:ket\nHTTPD:\x20Catch\x20a\x20broken\x20socket\nHTTPD:\x20Catch\x20a\x20
+SF:broken\x20socket\nHTTPD:\x20Catch\x20a\x20broken\x20socket\nHTTPD:\x20C
+SF:atch\x20a\x20broken\x20socket\nHTTPD:\x20Catch\x20a\x20broken\x20socket
+SF:\nHTTPD:\x20Catch\x20a\x20broken\x20socket\nHTTPD:\x20Catch\x20a\x20bro
+SF:ken\x20socket\nHTTPD:\x20Catch\x20a\x20broken\x20socket\nHTTPD:\x20Catc
+SF:h\x20a\x20broken\x20socket\nHTTPD:\x20Catch\x20a\x20broken\x20socket\nH
+SF:TTPD:\x20Catch\x20a\x20broken\x20socket\nHTTPD:\x20Catch\x20a\x20broken
+SF:\x20socket\nHTTPD:\x20Catch\x20a\x20broken\x20socket\nHTTPD:\x20Catch\x
+SF:20a\x20broken\x20socket\nHTTPD:\x20Catch\x20a\x20broken\x20socket\nHTTP
+SF:D:\x20Catch\x20a\x20broken\x20socket\nHTTPD:\x20Catch\x20a\x20broken\x2
+SF:0socket\nHTTPD:\x20Catch\x20")%r(GenericLines,18FD,"RTP:\x20onClientCon
+SF:nect\x20enginedId\x200\x20,\x20clientId\x200\x20,\x20ip:port\x20192\.16
+SF:8\.1\.245:52285\x20\nHTTPD:\x20fd:\x20138,\x20IP:\x200xf501a8c0\nHTTPD:
+SF:\x20invalid\x20request\nHTTPD:\x20fd:\x20138,\x20IP:\x200xf501a8c0\nHTT
+SF:PD:\x20Catch\x20a\x20broken\x20socket\nHTTPD:\x20Catch\x20a\x20broken\x
+SF:20socket\nHTTPD:\x20Catch\x20a\x20broken\x20socket\nHTTPD:\x20Catch\x20
+SF:a\x20broken\x20socket\nHTTPD:\x20Catch\x20a\x20broken\x20socket\nHTTPD:
+SF:\x20Catch\x20a\x20broken\x20socket\nHTTPD:\x20Catch\x20a\x20broken\x20s
+SF:ocket\nHTTPD:\x20Catch\x20a\x20broken\x20socket\nHTTPD:\x20Catch\x20a\x
+SF:20broken\x20socket\nHTTPD:\x20Catch\x20a\x20broken\x20socket\nHTTPD:\x2
+SF:0Catch\x20a\x20broken\x20socket\nHTTPD:\x20Catch\x20a\x20broken\x20sock
+SF:et\nHTTPD:\x20Catch\x20a\x20broken\x20socket\nHTTPD:\x20Catch\x20a\x20b
+SF:roken\x20socket\nHTTPD:\x20Catch\x20a\x20broken\x20socket\nHTTPD:\x20Ca
+SF:tch\x20a\x20broken\x20socket\nHTTPD:\x20Catch\x20a\x20broken\x20socket\
+SF:nHTTPD:\x20Catch\x20a\x20broken\x20socket\nHTTPD:\x20Catch\x20a\x20brok
+SF:en\x20socket\nHTTPD:\x20Catch\x20a\x20broken\x20socket\nHTTPD:\x20Catch
+SF:\x20a\x20broken\x20socket\nHTTPD:\x20Catch\x20a\x20broken\x20socket\nHT
+SF:TPD:\x20Catch\x20a\x20broken\x20socket\nHTTPD:\x20Catch\x20a\x20broken\
+SF:x20socket\nHTTPD:\x20Catch\x20a\x20broken\x20socket\nHTTPD:\x20Catch\x2
+SF:0");
+Service Info: Host: LocalHost; Device: storage-misc
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Feb  9 09:58:52 2023 -- 1 IP address (1 host up) scanned in 175.39 seconds

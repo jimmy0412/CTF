@@ -1,0 +1,7 @@
+#/bin/sh
+DIR=/var/top
+ps > ${DIR}
+Sofia_pid=`cat ${DIR} | awk /Sofia/'{print $1}'`
+Sofia_dir=/proc/${Sofia_pid}/task/
+rm ${DIR}
+top -d 1 -s ${Sofia_dir}

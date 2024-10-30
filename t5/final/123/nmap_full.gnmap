@@ -1,0 +1,5 @@
+# Nmap 7.80 scan initiated Thu Feb  9 09:55:57 2023 as: nmap -v -sV -sT -p- -oA nmap_full nmap 192.168.1.155
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 192.168.1.155 ()	Status: Up
+Host: 192.168.1.155 ()	Ports: 23/open/tcp//telnet//BusyBox telnetd/, 80/open/tcp//http//uc-httpd 1.0.0/, 554/open/tcp//rtsp//H264DVR rtspd 1.0/, 9527/open/tcp//unknown///, 9530/open/tcp/////, 34567/open/tcp//dhanalakshmi?///	Ignored State: closed (65529)
+# Nmap done at Thu Feb  9 09:58:52 2023 -- 1 IP address (1 host up) scanned in 175.39 seconds

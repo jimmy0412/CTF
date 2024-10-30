@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Thu Feb  9 09:55:57 2023 as: nmap -v -sV -sT -p- -oA nmap_full nmap 192.168.1.155 -->
+<nmaprun scanner="nmap" args="nmap -v -sV -sT -p- -oA nmap_full nmap 192.168.1.155" start="1675907757" startstr="Thu Feb  9 09:55:57 2023" version="7.80" xmloutputversion="1.04">
+<scaninfo type="connect" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="Ping Scan" time="1675907758"/>
+<taskend task="Ping Scan" time="1675907758" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1675907758"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1675907759"/>
+<taskbegin task="Connect Scan" time="1675907759"/>
+<taskend task="Connect Scan" time="1675907766" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1675907766"/>
+<taskprogress task="Service scan" time="1675907772" percent="33.33" remaining="12" etc="1675907784"/>
+<taskprogress task="Service scan" time="1675907797" percent="66.67" remaining="16" etc="1675907813"/>
+<taskend task="Service scan" time="1675907922" extrainfo="6 services on 1 host"/>
+<taskbegin task="NSE" time="1675907922"/>
+<taskend task="NSE" time="1675907925"/>
+<taskbegin task="NSE" time="1675907925"/>
+<taskend task="NSE" time="1675907932"/>
+<host starttime="1675907758" endtime="1675907932"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="192.168.1.155" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65529">
+<extrareasons reason="conn-refused" count="65529"/>
+</extraports>
+<port protocol="tcp" portid="23"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="telnet" product="BusyBox telnetd" hostname="LocalHost" method="probed" conf="10"><cpe>cpe:/a:busybox:busybox</cpe></service></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="uc-httpd 1.0.0" servicefp="SF-Port80-TCP:V=7.80%I=7%D=2/9%Time=63E452B9%P=x86_64-pc-linux-gnu%r(GetRequest,66C1,&quot;HTTP/1\.0\x20200\x20OK\nContent-type:\x20text/html\nServer:\x20uc-httpd\x201\.0\.0\nExpires:\x200\n\n\xef\xbb\xbf&lt;!DOCTYPE\x20html\x20PUBLIC\x20\&quot;-//W3C//DTD\x20XHTML\x201\.0\x20Transitional//EN\&quot;\x20\&quot;http://www\.w3\.org/TR/xhtml1/DTD/xhtml1-transitional\.dtd\&quot;&gt;\r\n&lt;html\x20xmlns=\&quot;http://www\.w3\.org/1999/xhtml\&quot;&gt;\r\n&lt;head&gt;\r\n\x20\x20\x20\x20&lt;meta\x20http-equiv=\&quot;Content-Type\&quot;\x20content=\&quot;text/html;\x20charset=UTF-8\&quot;\x20/&gt;\r\n\x20\x20\x20\x20&lt;link\x20rel=\&quot;stylesheet\&quot;\x20type=\&quot;text/css\&quot;\x20media=\&quot;screen\&quot;\x20href=\&quot;m\.css\&quot;\x20/&gt;\r\n\x20\x20\x20\x20\r\n\x20\x20\x20\x20&lt;title&gt;NETSurveillance\x20WEB&lt;/title&gt;\r\n\x20\x20\x20\x20\r\n\x20\x20\x20\x20&lt;!-&#45;\x20m\.js\x20-&#45;&gt;\r\n\r\n\x20\x20\x20\x20&lt;script\x20type=\&quot;text/javascript\&quot;\x20language=\&quot;JavaScript\&quot;&gt;\r\n\tif\(navigator\.userAgent\.indexOf\(&apos;IE&apos;\)\x20&lt;\x200\)\r\n\t{\r\n\t\tvar\x20userAgent\x20=\x20navigator\.userAgent,\x20\x20\x20\r\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20rMsie\x20=\x20/\(msie\\s\|trident\.\*rv:\)\(\[\\w\.\]\+\)/,\x20\x20\x20\r\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20rFirefox\x20=\x20/\(firefox\)\\/\(\[\\w\.\]\+\)/,\x20\x20\x20\r\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20rOpera\x20=\x20/\(opera\)\.\+version\\/\(\[\\w\.\]\+\)/,\x20\x20\x20\r\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20rChrome\x20=\x20/\(chrome\)\\/\(\[\\w\.\]\+\)/,\x20\x20\x20\r\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20rSafari\x20=\x20/version\\/\(\[\\w\.\]\+\)\.\*\(&quot;)%r(FourOhFourRequest,CC,&quot;HTTP/1\.0\x20200\x20OK\nContent-type:\x20application/binary\nServer:\x20uc-httpd\x201\.0\.0\nExpires:\x200\n\n&lt;html&gt;&lt;head&gt;&lt;title&gt;404\x20File\x20Not\x20Found&lt;/title&gt;&lt;/head&gt;\n&lt;body&gt;The\x20requested\x20URL\x20was\x20not\x20found\x20on\x20this\x20server&lt;/body&gt;&lt;/html&gt;\n&quot;);" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="554"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="rtsp" product="H264DVR rtspd" version="1.0" devicetype="storage-misc" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="9527"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="unknown" servicefp="SF-Port9527-TCP:V=7.80%I=7%D=2/9%Time=63E452B9%P=x86_64-pc-linux-gnu%r(NULL,1027,&quot;RTP:\x20onClientConnect\x20enginedId\x200\x20,\x20clientId\x200\x20,\x20ip:port\x20192\.168\.1\.245:52285\x20\nHTTPD:\x20fd:\x20138,\x20IP:\x200xf501a8c0\nHTTPD:\x20invalid\x20request\nHTTPD:\x20fd:\x20138,\x20IP:\x200xf501a8c0\nHTTPD:\x20Catch\x20a\x20broken\x20socket\nHTTPD:\x20Catch\x20a\x20broken\x20socket\nHTTPD:\x20Catch\x20a\x20broken\x20socket\nHTTPD:\x20Catch\x20a\x20broken\x20socket\nHTTPD:\x20Catch\x20a\x20broken\x20socket\nHTTPD:\x20Catch\x20a\x20broken\x20socket\nHTTPD:\x20Catch\x20a\x20broken\x20socket\nHTTPD:\x20Catch\x20a\x20broken\x20socket\nHTTPD:\x20Catch\x20a\x20broken\x20socket\nHTTPD:\x20Catch\x20a\x20broken\x20socket\nHTTPD:\x20Catch\x20a\x20broken\x20socket\nHTTPD:\x20Catch\x20a\x20broken\x20socket\nHTTPD:\x20Catch\x20a\x20broken\x20socket\nHTTPD:\x20Catch\x20a\x20broken\x20socket\nHTTPD:\x20Catch\x20a\x20broken\x20socket\nHTTPD:\x20Catch\x20a\x20broken\x20socket\nHTTPD:\x20Catch\x20a\x20broken\x20socket\nHTTPD:\x20Catch\x20a\x20broken\x20socket\nHTTPD:\x20Catch\x20a\x20broken\x20socket\nHTTPD:\x20Catch\x20a\x20broken\x20socket\nHTTPD:\x20Catch\x20a\x20broken\x20socket\nHTTPD:\x20Catch\x20a\x20broken\x20socket\nHTTPD:\x20Catch\x20a\x20broken\x20socket\nHTTPD:\x20Catch\x20a\x20broken\x20socket\nHTTPD:\x20Catch\x20a\x20broken\x20socket\nHTTPD:\x20Catch\x20&quot;)%r(GenericLines,18FD,&quot;RTP:\x20onClientConnect\x20enginedId\x200\x20,\x20clientId\x200\x20,\x20ip:port\x20192\.168\.1\.245:52285\x20\nHTTPD:\x20fd:\x20138,\x20IP:\x200xf501a8c0\nHTTPD:\x20invalid\x20request\nHTTPD:\x20fd:\x20138,\x20IP:\x200xf501a8c0\nHTTPD:\x20Catch\x20a\x20broken\x20socket\nHTTPD:\x20Catch\x20a\x20broken\x20socket\nHTTPD:\x20Catch\x20a\x20broken\x20socket\nHTTPD:\x20Catch\x20a\x20broken\x20socket\nHTTPD:\x20Catch\x20a\x20broken\x20socket\nHTTPD:\x20Catch\x20a\x20broken\x20socket\nHTTPD:\x20Catch\x20a\x20broken\x20socket\nHTTPD:\x20Catch\x20a\x20broken\x20socket\nHTTPD:\x20Catch\x20a\x20broken\x20socket\nHTTPD:\x20Catch\x20a\x20broken\x20socket\nHTTPD:\x20Catch\x20a\x20broken\x20socket\nHTTPD:\x20Catch\x20a\x20broken\x20socket\nHTTPD:\x20Catch\x20a\x20broken\x20socket\nHTTPD:\x20Catch\x20a\x20broken\x20socket\nHTTPD:\x20Catch\x20a\x20broken\x20socket\nHTTPD:\x20Catch\x20a\x20broken\x20socket\nHTTPD:\x20Catch\x20a\x20broken\x20socket\nHTTPD:\x20Catch\x20a\x20broken\x20socket\nHTTPD:\x20Catch\x20a\x20broken\x20socket\nHTTPD:\x20Catch\x20a\x20broken\x20socket\nHTTPD:\x20Catch\x20a\x20broken\x20socket\nHTTPD:\x20Catch\x20a\x20broken\x20socket\nHTTPD:\x20Catch\x20a\x20broken\x20socket\nHTTPD:\x20Catch\x20a\x20broken\x20socket\nHTTPD:\x20Catch\x20a\x20broken\x20socket\nHTTPD:\x20Catch\x20&quot;);" method="table" conf="3"/></port>
+<port protocol="tcp" portid="9530"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="34567"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="dhanalakshmi" method="table" conf="3"/></port>
+</ports>
+<times srtt="8198" rttvar="791" to="100000"/>
+</host>
+<runstats><finished time="1675907932" timestr="Thu Feb  9 09:58:52 2023" elapsed="175.39" summary="Nmap done at Thu Feb  9 09:58:52 2023; 1 IP address (1 host up) scanned in 175.39 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
