@@ -1,0 +1,16 @@
+version: '3.9'
+
+services:
+  web:
+    build: web
+    read_only: true
+    restart: always
+    volumes:
+      - ./flag:/flag.txt:ro
+  reverse_proxy:
+    image: nginx:latest
+    restart: always
+    ports:
+      - 8080:80
+    volumes:
+      - ./reverse_proxy/proxy.conf:/etc/nginx/conf.d/default.conf:ro

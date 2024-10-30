@@ -1,0 +1,6 @@
+services:
+  chal: 
+    build:
+      context: chal
+    ports:
+      - '10000:10000'

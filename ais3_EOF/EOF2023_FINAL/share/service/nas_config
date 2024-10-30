@@ -1,0 +1,4 @@
+ADMIN_PASSWORD=ggggggggggggggggggggggggggggggggg
+MAX_PASSWORD_LENGTH=40
+TEMP_BUFFER_SIZE=1000
+DEBUG=false
