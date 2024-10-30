@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  bounty_program:
+    build: ./
+    volumes:
+      - ./:/home/bounty_program:r
+
+    ports:
+      - "30203:10101"
+    expose:
+      - "10101"
+

@@ -1,0 +1,329 @@
+b'H'
+   0:   48                      dec    eax
+b'He'
+   0:   48                      dec    eax
+   1:   65                      gs
+b'Li'
+   0:   4c                      dec    esp
+   1:   69                      .byte 0x69
+b'Be'
+   0:   42                      inc    edx
+   1:   65                      gs
+b'B'
+   0:   42                      inc    edx
+b'C'
+   0:   43                      inc    ebx
+b'N'
+   0:   4e                      dec    esi
+b'O'
+   0:   4f                      dec    edi
+b'F'
+   0:   46                      inc    esi
+b'Ne'
+   0:   4e                      dec    esi
+   1:   65                      gs
+b'Na'
+   0:   4e                      dec    esi
+   1:   61                      popa
+b'Mg'
+   0:   4d                      dec    ebp
+   1:   67                      addr16
+b'Al'
+   0:   41                      inc    ecx
+   1:   6c                      ins    BYTE PTR es:[edi], dx
+b'Si'
+   0:   53                      push   ebx
+   1:   69                      .byte 0x69
+b'P'
+   0:   50                      push   eax
+b'S'
+   0:   53                      push   ebx
+b'Cl'
+   0:   43                      inc    ebx
+   1:   6c                      ins    BYTE PTR es:[edi], dx
+b'Ar'
+   0:   41                      inc    ecx
+   1:   72                      .byte 0x72
+b'K'
+   0:   4b                      dec    ebx
+b'Ca'
+   0:   43                      inc    ebx
+   1:   61                      popa
+b'Sc'
+   0:   53                      push   ebx
+   1:   63                      .byte 0x63
+b'Ti'
+   0:   54                      push   esp
+   1:   69                      .byte 0x69
+b'V'
+   0:   56                      push   esi
+b'Cr'
+   0:   43                      inc    ebx
+   1:   72                      .byte 0x72
+b'Mn'
+   0:   4d                      dec    ebp
+   1:   6e                      outs   dx, BYTE PTR ds:[esi]
+b'Fe'
+   0:   46                      inc    esi
+   1:   65                      gs
+b'Co'
+   0:   43                      inc    ebx
+   1:   6f                      outs   dx, DWORD PTR ds:[esi]
+b'Ni'
+   0:   4e                      dec    esi
+   1:   69                      .byte 0x69
+b'Cu'
+   0:   43                      inc    ebx
+   1:   75                      .byte 0x75
+b'Zn'
+   0:   5a                      pop    edx
+   1:   6e                      outs   dx, BYTE PTR ds:[esi]
+b'Ga'
+   0:   47                      inc    edi
+   1:   61                      popa
+b'Ge'
+   0:   47                      inc    edi
+   1:   65                      gs
+b'As'
+   0:   41                      inc    ecx
+   1:   73                      .byte 0x73
+b'Se'
+   0:   53                      push   ebx
+   1:   65                      gs
+b'Br'
+   0:   42                      inc    edx
+   1:   72                      .byte 0x72
+b'Kr'
+   0:   4b                      dec    ebx
+   1:   72                      .byte 0x72
+b'Rb'
+   0:   52                      push   edx
+   1:   62                      .byte 0x62
+b'Sr'
+   0:   53                      push   ebx
+   1:   72                      .byte 0x72
+b'Y'
+   0:   59                      pop    ecx
+b'Zr'
+   0:   5a                      pop    edx
+   1:   72                      .byte 0x72
+b'Nb'
+   0:   4e                      dec    esi
+   1:   62                      .byte 0x62
+b'Mo'
+   0:   4d                      dec    ebp
+   1:   6f                      outs   dx, DWORD PTR ds:[esi]
+b'Tc'
+   0:   54                      push   esp
+   1:   63                      .byte 0x63
+b'Ru'
+   0:   52                      push   edx
+   1:   75                      .byte 0x75
+b'Rh'
+   0:   52                      push   edx
+   1:   68                      .byte 0x68
+b'Pd'
+   0:   50                      push   eax
+   1:   64                      fs
+b'Ag'
+   0:   41                      inc    ecx
+   1:   67                      addr16
+b'Cd'
+   0:   43                      inc    ebx
+   1:   64                      fs
+b'In'
+   0:   49                      dec    ecx
+   1:   6e                      outs   dx, BYTE PTR ds:[esi]
+b'Sn'
+   0:   53                      push   ebx
+   1:   6e                      outs   dx, BYTE PTR ds:[esi]
+b'Sb'
+   0:   53                      push   ebx
+   1:   62                      .byte 0x62
+b'Te'
+   0:   54                      push   esp
+   1:   65                      gs
+b'I'
+   0:   49                      dec    ecx
+b'Xe'
+   0:   58                      pop    eax
+   1:   65                      gs
+b'Cs'
+   0:   43                      inc    ebx
+   1:   73                      .byte 0x73
+b'Ba'
+   0:   42                      inc    edx
+   1:   61                      popa
+b'La'
+   0:   4c                      dec    esp
+   1:   61                      popa
+b'Ce'
+   0:   43                      inc    ebx
+   1:   65                      gs
+b'Pr'
+   0:   50                      push   eax
+   1:   72                      .byte 0x72
+b'Nd'
+   0:   4e                      dec    esi
+   1:   64                      fs
+b'Pm'
+   0:   50                      push   eax
+   1:   6d                      ins    DWORD PTR es:[edi], dx
+b'Sm'
+   0:   53                      push   ebx
+   1:   6d                      ins    DWORD PTR es:[edi], dx
+b'Eu'
+   0:   45                      inc    ebp
+   1:   75                      .byte 0x75
+b'Gd'
+   0:   47                      inc    edi
+   1:   64                      fs
+b'Tb'
+   0:   54                      push   esp
+   1:   62                      .byte 0x62
+b'Dy'
+   0:   44                      inc    esp
+   1:   79                      .byte 0x79
+b'Ho'
+   0:   48                      dec    eax
+   1:   6f                      outs   dx, DWORD PTR ds:[esi]
+b'Er'
+   0:   45                      inc    ebp
+   1:   72                      .byte 0x72
+b'Tm'
+   0:   54                      push   esp
+   1:   6d                      ins    DWORD PTR es:[edi], dx
+b'Yb'
+   0:   59                      pop    ecx
+   1:   62                      .byte 0x62
+b'Lu'
+   0:   4c                      dec    esp
+   1:   75                      .byte 0x75
+b'Hf'
+   0:   48                      dec    eax
+   1:   66                      data16
+b'Ta'
+   0:   54                      push   esp
+   1:   61                      popa
+b'W'
+   0:   57                      push   edi
+b'Re'
+   0:   52                      push   edx
+   1:   65                      gs
+b'Os'
+   0:   4f                      dec    edi
+   1:   73                      .byte 0x73
+b'Ir'
+   0:   49                      dec    ecx
+   1:   72                      .byte 0x72
+b'Pt'
+   0:   50                      push   eax
+   1:   74                      .byte 0x74
+b'Au'
+   0:   41                      inc    ecx
+   1:   75                      .byte 0x75
+b'Hg'
+   0:   48                      dec    eax
+   1:   67                      addr16
+b'Tl'
+   0:   54                      push   esp
+   1:   6c                      ins    BYTE PTR es:[edi], dx
+b'Pb'
+   0:   50                      push   eax
+   1:   62                      .byte 0x62
+b'Bi'
+   0:   42                      inc    edx
+   1:   69                      .byte 0x69
+b'Po'
+   0:   50                      push   eax
+   1:   6f                      outs   dx, DWORD PTR ds:[esi]
+b'At'
+   0:   41                      inc    ecx
+   1:   74                      .byte 0x74
+b'Rn'
+   0:   52                      push   edx
+   1:   6e                      outs   dx, BYTE PTR ds:[esi]
+b'Fr'
+   0:   46                      inc    esi
+   1:   72                      .byte 0x72
+b'Ra'
+   0:   52                      push   edx
+   1:   61                      popa
+b'Ac'
+   0:   41                      inc    ecx
+   1:   63                      .byte 0x63
+b'Th'
+   0:   54                      push   esp
+   1:   68                      .byte 0x68
+b'Pa'
+   0:   50                      push   eax
+   1:   61                      popa
+b'U'
+   0:   55                      push   ebp
+b'Np'
+   0:   4e                      dec    esi
+   1:   70                      .byte 0x70
+b'Pu'
+   0:   50                      push   eax
+   1:   75                      .byte 0x75
+b'Am'
+   0:   41                      inc    ecx
+   1:   6d                      ins    DWORD PTR es:[edi], dx
+b'Cm'
+   0:   43                      inc    ebx
+   1:   6d                      ins    DWORD PTR es:[edi], dx
+b'Bk'
+   0:   42                      inc    edx
+   1:   6b                      .byte 0x6b
+b'Cf'
+   0:   43                      inc    ebx
+   1:   66                      data16
+b'Es'
+   0:   45                      inc    ebp
+   1:   73                      .byte 0x73
+b'Fm'
+   0:   46                      inc    esi
+   1:   6d                      ins    DWORD PTR es:[edi], dx
+b'Md'
+   0:   4d                      dec    ebp
+   1:   64                      fs
+b'No'
+   0:   4e                      dec    esi
+   1:   6f                      outs   dx, DWORD PTR ds:[esi]
+b'Lr'
+   0:   4c                      dec    esp
+   1:   72                      .byte 0x72
+b'Rf'
+   0:   52                      push   edx
+   1:   66                      data16
+b'Db'
+   0:   44                      inc    esp
+   1:   62                      .byte 0x62
+b'Sg'
+   0:   53                      push   ebx
+   1:   67                      addr16
+b'Bh'
+   0:   42                      inc    edx
+   1:   68                      .byte 0x68
+b'Hs'
+   0:   48                      dec    eax
+   1:   73                      .byte 0x73
+b'Mt'
+   0:   4d                      dec    ebp
+   1:   74                      .byte 0x74
+b'Ds'
+   0:   44                      inc    esp
+   1:   73                      .byte 0x73
+b'Rg'
+   0:   52                      push   edx
+   1:   67                      addr16
+b'Cn'
+   0:   43                      inc    ebx
+   1:   6e                      outs   dx, BYTE PTR ds:[esi]
+b'Fl'
+   0:   46                      inc    esi
+   1:   6c                      ins    BYTE PTR es:[edi], dx
+b'Lv'
+   0:   4c                      dec    esp
+   1:   76                      .byte 0x76
+
